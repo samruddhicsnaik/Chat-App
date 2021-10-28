@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="date"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:textColor="@color/textColor"/>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/date">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_layout"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/sender_message_layout"
+            android:padding="10dp"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textColor="@color/textColor"
+                android:textSize="12dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:text="Sender message"
+                android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="time"
+                    android:textColor="@color/textColor"
+                    android:textSize="12dp"
+                    android:layout_below="@id/message"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:id="@+id/seen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seen"
+                    android:textColor="@color/textColor"
+                    android:textSize="12dp"
+                    android:layout_below="@id/message"
+                    android:layout_toEndOf="@id/time"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/file_layout"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/sender_message_layout"
+            android:padding="10dp"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/sender_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textColor="@color/textColor"
+                android:textSize="12dp"/>
+
+            <ImageView
+                android:id="@+id/file"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/sender_name"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/file_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="time"
+                    android:textColor="@color/textColor"
+                    android:textSize="12dp"
+                    android:layout_below="@id/file"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:id="@+id/file_seen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seen"
+                    android:textColor="@color/textColor"
+                    android:textSize="12dp"
+                    android:layout_below="@id/file"
+                    android:layout_toEndOf="@id/file_time"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

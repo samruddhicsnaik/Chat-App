@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/navigation_home"
+        android:title="Home"
+        android:icon="@drawable/navigation_home"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/navigation_friends"
+        android:title="Friends"
+        android:icon="@drawable/navigation_friends"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/navigation_groups"
+        android:title="Groups"
+        android:icon="@drawable/navigation_groups"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/navigation_posts"
+        android:title="Posts"
+        android:icon="@drawable/navigation_posts"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/navigation_saved_post"
+        android:title="Favorites"
+        android:icon="@drawable/save"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

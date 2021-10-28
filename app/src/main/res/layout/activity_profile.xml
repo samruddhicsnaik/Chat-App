@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/background">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/person_profile_toolbar">
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/person_profile_toolbar"
+        android:layout_margin="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/person_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                app:civ_circle_background_color="@color/darkTheme"
+                android:layout_margin="20dp"
+                android:src="@drawable/user"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="1dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+
+            <TextView
+                android:id="@+id/name_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_below="@id/person_image"
+                android:textColor="@color/textColor"
+                android:layout_marginBottom="10dp">
+
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/person_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_label"
+                android:layout_marginBottom="10dp"
+                android:text="person name"
+                android:textColor="@android:color/white">
+
+            </TextView>
+
+            <View
+                android:id="@+id/name_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/person_name"
+                android:background="@color/textColor"
+                android:layout_marginBottom="20dp">
+
+            </View>
+
+            <TextView
+                android:id="@+id/about_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:layout_below="@id/name_line"
+                android:textColor="@color/textColor"
+                android:layout_marginBottom="10dp">
+
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/person_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/about_label"
+                android:layout_marginBottom="10dp"
+                android:text="person about"
+                android:textColor="@android:color/white">
+
+            </TextView>
+
+            <View
+                android:id="@+id/about_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/person_about"
+                android:background="@color/colorPrimary"
+                android:layout_marginBottom="50dp">
+
+            </View>
+
+            <Button
+                android:id="@+id/send_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="Send Request"
+                android:textColor="@android:color/white"
+                android:layout_below="@id/about_line"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+            </Button>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
